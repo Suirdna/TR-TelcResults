@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>Telc - Test results</title>
+    <link rel = 'stylesheet' type = "text/css" href = './assets/style.css'/>
+</head>
+<body>
+    <div class = 'main_block'>
+        <div class = 'background-exp'>
+        <div class = 'logo_block'>
+            <img class = 'logo' src = './assets/logo.png'/>
+        </div>
+        <div class = 'login_block'>
+            <form class = 'login' method = 'post' action = '/'>
+                <input class = 'textfield' name = 'benutzername' type = 'text' placeholder = 'Ihre Benutzername...'/>
+                <input class = 'textfield' name = 'passwort' type = 'password' placeholder = 'Ihre Passwort...'/>
+                <div class = 'button_block'>
+                    <button type = 'submit' class = 'login'>Anmelden</button>
+                    <a href = '/registration' class = 'registration'>Registration</a>
+                </div>
+            </form>
+        </div>
+        <div class = 'news_block'>
+            <div class = 'news'>
+                <div class = 'title'>
+                    <h1>Aktuell</h1>
+                </div>
+                <div class = 'info'>
+                    <p class = 'description'>20.10.2019<br>Deutschkurs C1 Anfang<br><br>
+                        Deutschkurs C1 bei dem Bbw ab 10 Oktober!
+                    </p>
+                </div>
+                <button class = 'read'>Weiterlesen</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class = 'error_block'>
+        <% if(unsc === 'True'){ %>
+            <p class = 'error'>Benutzername oder Passwort ist falsch!</p>
+        <% }else{ %>
+            
+        <% } %>
+    </div>
+</body>
+</html>
