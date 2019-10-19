@@ -11,6 +11,8 @@ var dataCore = mysql.createConnection({
     database: 'DlZKtF5Twf'
 });
 
+const port = process.env.PORT || 8000
+
 app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));
 dataCore.connect();
@@ -72,4 +74,4 @@ app.get('/profile', function(req, res){
     res.render('index', {unsc: 'False'});
 });
 
-app.listen(5000);
+app.listen(port);
