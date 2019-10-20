@@ -2,6 +2,7 @@ var express = require('express');
 var boddyParser = require('body-parser');
 var mysql = require('mysql');
 
+var port = process.env.port || 8000;
 var app = express();
 var urlencodedParser = boddyParser.urlencoded({extended: false});
 var dataCore = mysql.createConnection({
@@ -10,8 +11,6 @@ var dataCore = mysql.createConnection({
     password: 'H7MxDUFLRY',
     database: 'DlZKtF5Twf'
 });
-
-const port = process.env.PORT || 8000
 
 app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));

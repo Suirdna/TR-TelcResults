@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body{
     width: 100%;
     background-color: #75bfc8;
@@ -8,6 +13,7 @@ body{
     height: 600px;
     background-image: linear-gradient(#75bfc8, #a8d9de);
     margin: 0px auto;
+    margin-top: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #646464;
 }
@@ -67,8 +73,9 @@ img.logo{
 }
 
 form.login{
-    width: 305px;   
+    width: 100%;   
     margin: 0px auto;
+
 }
 
 form.registration{
@@ -86,7 +93,10 @@ input.textfield{
     border: 1px solid #fff;
     border-radius: 20px;
     opacity: 0.7;
-    text-align: center;     
+    text-align: center;
+    width: 145px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input.textfield_reg{
@@ -128,7 +138,8 @@ a{
 }
 
 button.login{
-    padding-left: 40px;
+    width: 35%;    
+    padding-left: 35px;
     padding-right: 35px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -142,10 +153,12 @@ button.login{
 }
 
 a.registration{
+    width: 35%;
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
     background-color: #7ec4cc;
     border: 1px solid #fff;
     border-radius: 20px;
@@ -210,7 +223,7 @@ button.send:hover{
 }
 
 h1{
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
     padding-left: 10px;
     padding-top: 7px;
@@ -224,7 +237,10 @@ p.description{
     font-family: Tahoma;
     font-size: 10pt;
     margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 20px;
     color: #4f4e4f;
+    line-height: 15px;
 }
 
 button.read{
